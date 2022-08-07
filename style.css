@@ -1,0 +1,146 @@
+/** @format */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vw;
+    background-color:( 50% coral) rgb(82, 151, 128);
+    background: url("ani2.jpg") center -138px / 100% 1068px no-repeat,
+        linear-gradient(100%);
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    /* padding: 5px; */
+    margin: 50px auto;
+}
+h1{
+    text-align-last: center;
+   
+    text-decoration: solid rgb(235, 189, 105);
+    scroll-behavior: smooth;
+    text-indent: 20px;
+
+}
+
+.addTask {
+    width: 100%;
+    
+    border-radius: 20px;
+    display: flex;
+    padding: 40px 0;
+}
+
+.addTask>input[type="text"] {
+    width: 90%;
+    color: rgb(250, 244, 244);
+    border: none;
+    font-style: normal;
+    border-radius: 20px;
+
+    border-bottom: 4px solid #666;
+   
+    padding: 10px;
+    font-size: 22px;
+    outline: none;
+    border-style:inherit;
+}
+
+.addTask button {
+    margin: 0 20px;
+    background: #222;
+    color: rgb(228, 209, 209);
+    font-size: 18px;
+    
+    text-transform: uppercase;
+    border-bottom: 4px solid;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border-color: rgb(42, 176, 56);
+}
+
+.notCompleted,
+.Completed {
+    margin: 10px 0;
+    padding: 10px;
+    font-variant: small-caps;
+    font-style: oblique;
+    border-bottom:2px solid #666;
+    color:rgb(53, 44, 44);
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-decoration-color: #222;
+    border-radius: 20px;
+    text-align: center;
+
+    color: rgba(25, 17, 17, 0.949);
+}
+
+ol {
+    list-style: none;
+    max-height:50%
+    /* counter-reset: my-counter; */
+}
+
+ol li {
+    width: 100%;
+    margin-top: auto;
+    /* padding-top: 7px; */
+    height: 50px;
+    padding: 10px;
+    margin: 5px 0;
+    border-left:50px ;
+    border-radius: 20px;
+    border-width: 2px;
+    background: #e96767bb;
+    font-size: 30px;
+    counter-increment: my-counter;
+    border-bottom: 4px solid rgb(215, 169, 70);
+}
+
+ol.Completed li {
+    border-radius: 20px;
+    padding-bottom: 7px;
+    height: 50px;
+    width: 100%;
+    border-bottom: 4px solid #69a0b3;
+    background: rgb(169, 242, 151);
+}
+
+ol li::before {
+    content: counter(my-counter);
+    background: #f5f4ed;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20px;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    color: rgb(194, 15, 15);
+    margin-right: 0.5rem;
+}
+
+li button {
+    float: right;
+    padding: 5px;
+    font-size: 28px;
+    line-height: 28px;
+    margin-right: 15px;
+    background: none;
+    color-scheme: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
