@@ -1,17 +1,25 @@
 /** @format */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    height: 100vw;
-    background-color:( 50% coral) rgb(82, 151, 128);
-    background: url("ani2.jpg") center -138px / 100% 1068px no-repeat,
-        linear-gradient(100%);
-}
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("ima.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    
 
 .container {
     position: relative;
@@ -19,13 +27,12 @@ body {
     /* padding: 5px; */
     margin: 50px auto;
 }
-h1{
+h1
+{
     text-align-last: center;
-   
     text-decoration: solid rgb(235, 189, 105);
     scroll-behavior: smooth;
     text-indent: 20px;
-
 }
 
 .addTask {
@@ -64,7 +71,7 @@ h1{
     outline: none;
     border-radius: 20px;
     cursor: pointer;
-    border-color: rgb(42, 176, 56);
+    border-color: rgb(238, 245, 239);
 }
 
 .notCompleted,
