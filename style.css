@@ -26,7 +26,7 @@
 :root {
     --black: rgb(0, 0, 0);
     --green: rgb(12, 212, 243);
-    --backgroundGreen: rgb(139, 255, 116);
+    --backgroundBlack: rgb(23, 25, 23);
     --white: rgb(255, 255, 255);
     --blue: rgb(21, 17, 255);
 }
@@ -60,7 +60,7 @@ body {
 header {
     letter-spacing: -1px;
     background: rgb(111, 108, 221);
-    background: linear-gradient(90deg, rgb(217, 241, 132) 0%, rgb(146, 231, 67) 50%, rgb(217, 241, 132) 100%);
+    background: linear-gradient(90deg, rgb(217, 241, 132) 0%, 50%, rgb(217, 241, 132) 100%);
     color: black;
     border-radius: 10px;
     padding: 0%;
@@ -105,7 +105,7 @@ form button:hover {
 }
 
 .delete-all:hover {
-    background-color: rgb(207, 2, 2);
+    background-color: rgb(195, 158, 26);
 }
 
 .todo-container {
@@ -316,7 +316,7 @@ select {
 }
 
 .green {
-    background-color: rgb(76, 165, 76);
+    background-color: rgb(15, 17, 15);
 }
 
 .red {
