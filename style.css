@@ -54,13 +54,14 @@ body {
 }
 
 body {
-    background-color: rgb(237 206 206);
+    background-color: rgb(216, 188, 188);
 }
 
 header {
     letter-spacing: -1px;
     background: rgb(111, 108, 221);
-    background: linear-gradient(90deg, rgb(217, 241, 132) 0%, 50%, rgb(217, 241, 132) 100%);
+    /* background: linear-gradient(90deg, rgb(217, 241, 132) 0%, 50%, rgb(217, 241, 132) 100%); */
+    background-color: rgb(73, 199, 234);
     color: black;
     border-radius: 10px;
     padding: 0%;
@@ -89,7 +90,7 @@ form button,
     background-color: rgb(162, 149, 149);
     border-radius: 20px;
     border: none;
-    box-shadow: rgb(203, 170, 22) 5px 5px 20px;
+    box-shadow: rgb(244, 240, 221) 5px 5px 20px;
 }
 
 form button:hover {
@@ -123,7 +124,7 @@ form button:hover {
 
 .todo {
     margin: 0.5rem;
-    background: rgb(192, 18, 18);
+    background: rgb(228, 141, 200);
     font-size: 2rem;
     color: var(--black);
     display: flex;
