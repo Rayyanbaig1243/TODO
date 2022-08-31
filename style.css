@@ -86,10 +86,10 @@ form button,
     font-size: 2rem;
     outline: none;
     width: fit-content;
-    background-color: white;
-    border-radius: 5px;
+    background-color: rgb(162, 149, 149);
+    border-radius: 20px;
     border: none;
-    box-shadow: rgb(170, 169, 169) 5px 5px 20px;
+    box-shadow: rgb(203, 170, 22) 5px 5px 20px;
 }
 
 form button:hover {
@@ -123,7 +123,7 @@ form button:hover {
 
 .todo {
     margin: 0.5rem;
-    background: #FFF;
+    background: rgb(192, 18, 18);
     font-size: 2rem;
     color: var(--black);
     display: flex;
@@ -150,17 +150,20 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-    background: red;
+    background:greenyellow;
     color: #FFFFFF;
     border: none;
     padding: 2rem;
     cursor: pointer;
     font-size: 1rem;
+    box-shadow:10px greenyellow;
+    border-radius: 25px;
 }
 
 .complete-btn {
     background-color: #55acee;
     color: #FFF;
+    border-radius: 25px;
 }
 
 .edit-btn {
@@ -168,6 +171,7 @@ form button:hover {
     padding: 2rem;
     cursor: pointer;
     font-size: 1rem;
+    border-radius: 25px;
 }
 
 .todo-item {
@@ -219,7 +223,7 @@ select {
     overflow: hidden;
     background-color: #55acee;
     outline: none;
-    color: #1511ff;
+    color: #817fe0;
     font-family: "Poppins", sans-serif;
     width: 12rem;
     border-radius: 5px;
@@ -239,20 +243,21 @@ select {
 .footer {
     margin-top: auto;
     width: 100%;
-    background-color: #b8ee55;
+    background-color: #e5f0cf;
     text-align: center;
     padding: 1rem;
+    
     font-family: "Lobster", cursive;
 }
 
-@media only screen and (max-width: 440px) {
+ /* @media only screen and (max-width: 440px) {
     .abc {
         flex-direction: column;
     }
     .todoform {
         flex-direction: column;
-    }
-}
+    } 
+}  */
 
 
 /* Arrow */
@@ -262,7 +267,7 @@ select {
 
 .select:hover::after {
     background-color: #f7fffe;
-    color: #1511ff;
+    color: #7977cc;
 }
 
 
@@ -505,7 +510,7 @@ select {
         font-family: "Lobster", cursive;
         position: relative;
         left: 20px;
-        box-shadow: 10px 10px 10px rgba(132, 131, 131, 0.537);
+        box-shadow: 5px 5px 5px rgba(237, 163, 163, 0.537);
         text-align: center;
         line-height: 60px;
         font-size: 2.2rem;
