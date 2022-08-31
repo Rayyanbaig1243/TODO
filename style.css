@@ -1,18 +1,22 @@
 /** @format */
 
 
-body {
+/* body {
     background-image: url('1234.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  }
+  } */
 body, html {
     height: 100%;
     margin: none;
     padding-top: 0%;
     padding-bottom: 0%;
     background-color: red;
+    background-image: url('1234.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     
   }
   
