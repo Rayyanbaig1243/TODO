@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Roboto+Slab&family=Ubuntu:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Roboto+Slab&family=Ubuntu:wght@400;500&display=swap&family=Open+Sans:ital,wght@1,300&display=swap&family=Raleway:wght@300&display=swap");
 /* @keyframes slideInFromLeft {
   0% {
     transform: translateY(-100%);
@@ -145,7 +145,7 @@ form button:hover {
 }
 
 .main_heading h2 {
-  font-family: "Lobster", cursive;
+  font-family: "Raleway", sans-serif;
   font-size: 4rem;
 }
 
@@ -488,5 +488,3 @@ select {
   background: rgb(92, 92, 92);
   border-radius: 10px;
 }
-
-
