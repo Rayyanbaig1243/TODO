@@ -25,7 +25,11 @@ function addTodo(e) {
     openmodal("red", "Please enter a Task!");
     return;
   }
-
+  // make the default text invisible
+  if(todoInput.value.trim() != "")
+  {
+    document.getElementById('default').style.display='none';
+  }
   // alert("Duplicate task")
   if(isDuplicate(todoInput.value)){
     openmodal('red','This Task is already added!');
@@ -412,6 +416,8 @@ function deleteAll() {
   [...document.getElementsByClassName("todo")].map((n) => n && n.remove());
   localStorage.removeItem("todos");
   document.getElementById("confirmation_box").classList.add("hide");
+  //make defalut text visisble
+  document.getElementById('default').style.display='block';
 }
 
 function openmodal(color, message) {
