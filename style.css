@@ -24,11 +24,16 @@
 }
 
 :root {
-  --black: rgb(17, 16, 16);
-  --green: rgb(97, 127, 132);
-  --backgroundBlack: rgb(150, 202, 150);
-  --white: rgb(19, 17, 17);
-  --blue: rgb(75, 75, 96);
+  --black:
+  rgb(2 2 2);
+  --green:
+  rgb(97, 127, 132);
+  --backgroundBlack:
+  rgb(150, 202, 150);
+  --white:
+  rgb(19, 17, 17);
+  --blue:
+  rgb(75, 75, 96);
 }
 
 html {
@@ -51,20 +56,20 @@ body {
   display: flex;
   color: #f3ebeb;
   flex-direction: column;
-  background-color: #e1eaea;
+  background-color: #cbd3d3;
   /* animation: 1s ease-out 0s 1 slideInFromLeft; */
 }
 
 body {
-  background-color: rgb(69, 69, 69);
-  color-scheme: var(--white);
+  background-color: rgba(197, 200, 196, 0.578);
+  color-scheme: black;
 }
 
 header {
-  letter-spacing: -1px;
-  background: #000;
-  color: rgb(255, 255, 255);
-  box-shadow: rgb(80, 78, 78) 5px 5px 20px;
+  letter-spacing: 5px;
+  background: #1f2423;
+  color: rgb(197, 190, 190);
+  box-shadow: rgba(91, 103, 104, 0.75) 5px 5px 20px;
 }
 
 header,
@@ -86,16 +91,19 @@ form button,
   font-size: 2rem;
   outline: none;
   width: fit-content;
-  background-color: rgb(0, 0, 0);
-  padding: 11px;
-  border-radius: 17px;
-  border: none;
-  box-shadow: rgb(0, 0, 0) 5px 5px 20px;
+  background-color: rgb(229 232 230);
+  padding: 15px;
+  border-radius: 25px;
+  border: 5px solid #0f100f;
+  border-bottom: 8px solid #364632;
+  border-left: 8px solid #9ca29d;
+  /* box-shadow: rgb(0, 0, 0) 5px 5px 20px; */
 }
 
 form button {
-  width: 50px;
-  height: 50px;
+  background: black;
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
 }
 form button:hover {
@@ -104,7 +112,7 @@ form button:hover {
 }
 
 .delete-all {
-  background-color: red;
+  background-color: #2d3432;
   color: white;
   width: 200px;
   margin: auto auto 1.5rem;
@@ -228,8 +236,8 @@ select {
   font-size: medium;
   font-family: "Times New Roman", Times, serif;
   border-radius: 20px;
-  background-color: #000;
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: white;
   cursor: pointer;
 }
 
@@ -242,18 +250,24 @@ select {
   margin: 1rem;
   /* position: relative; */
   overflow: hidden;
-  background-color: #000000;
+  background: rgb(33, 35, 34);
   outline: none;
   color: #8e8de8;
   font-family: "Poppins", sans-serif;
-  width: 12rem;
-  border-radius: 17px;
-  box-shadow: rgb(0, 0, 0) 5px 5px 20px;
+  width: 10rem;
+  border-radius: 28px;
+  /* box-shadow: rgb(0, 0, 0) 5px 5px 20px; */
 }
 
 .abc {
   display: flex;
   flex-direction: row;
+  border: 5px solid rgb(17, 18, 17);
+  border-radius:25px ;
+  border: 6px solid #161816;
+  /* border-bottom: 5px solid #798777; */
+  /* border-right: 5px solid #374b33; */
+  /* border-top: 5px solid #798777; */
 }
 
 .todoform {
@@ -264,7 +278,7 @@ select {
 .footer {
   margin-top: auto;
   width: 100%;
-  background-color: #e5f0cf;
+  background-color:#353938; 
   text-align: center;
   padding: 0.8rem;
   font-family: "Lobster", cursive;
@@ -307,7 +321,7 @@ select {
 }
 
 .footer-desc {
-  color: rgb(16, 16, 16);
+  color: rgb(253 253 253);
   font-size: 1em;
 }
 
