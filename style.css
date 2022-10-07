@@ -548,7 +548,7 @@ select {
 .footer .box-container .box .share {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem 21rem;
+  padding: 0rem 23rem;
   justify-content: space-between;
 }
 .footer .box-container .box .share a {
