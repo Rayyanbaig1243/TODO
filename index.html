@@ -9,10 +9,20 @@
     />
     <title>MyTODO</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
 
     <meta
       name="viewport"
@@ -29,7 +39,6 @@
       crossorigin="anonymous"
     />
 
-
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -41,34 +50,45 @@
     </header>
 
     <div class="blue" id="Modal">
-
-        <div class="content" id="content">
-            <span id="modal-text">
-
-            </span>
-            <!-- <button onclick="closemodal()" class="modal-btn">x</button> -->
-        </div>
-    </div>
-    <!-- <span class="todayDate">Day <span id="d1"></span></span> -->
-    <form class="todoform">
-        <input type="text" placeholder="Add a new Task .." class="todo-input" required />
-        <div class="abc">
-            <button class="todo-button" type="submit">
-                <i class="fas fa-plus-square"></i>
-            </button>
-            <div class="select">
-                <select name="todos" class="filter-todo " style="color:rgb(35, 32, 32);">
-                    <option value="all" style="color:rgb(31, 27, 27);">All</option>
-                    <option value="completed" style="color:rgb(43, 39, 39);">Completed</option>
-                    <option value="incomplete" style="color:rgb(20, 18, 18);">Incomplete</option>
-                </select>
-            </div>
-
       <div class="content" id="content">
         <span id="modal-text"> </span>
         <!-- <button onclick="closemodal()" class="modal-btn">x</button> -->
       </div>
     </div>
+    <!-- <span class="todayDate">Day <span id="d1"></span></span> -->
+    <form class="todoform">
+      <input
+        type="text"
+        placeholder="Add a new Task .."
+        class="todo-input"
+        required
+      />
+      <div class="abc">
+        <button class="todo-button" type="submit">
+          <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+          <select
+            name="todos"
+            class="filter-todo"
+            style="color: rgb(35, 32, 32)"
+          >
+            <option value="all" style="color: rgb(31, 27, 27)">All</option>
+            <option value="completed" style="color: rgb(43, 39, 39)">
+              Completed
+            </option>
+            <option value="incomplete" style="color: rgb(20, 18, 18)">
+              Incomplete
+            </option>
+          </select>
+        </div>
+
+        <div class="content" id="content">
+          <span id="modal-text"> </span>
+          <!-- <button onclick="closemodal()" class="modal-btn">x</button> -->
+        </div>
+      </div>
+    </form>
     <!-- <span class="todayDate">Day <span id="d1"></span></span> -->
     <form class="todoform">
       <input
@@ -87,7 +107,6 @@
             <option value="completed" style="color: #fff">Completed</option>
             <option value="incomplete" style="color: #fff">Incomplete</option>
           </select>
-
         </div>
       </div>
     </form>
@@ -108,40 +127,44 @@
       </div>
     </div>
 
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>About</h3>
+          <p>
+            Thank you for visiting. Connect with me over socials. <br />
+            <br />
+            TODO App enables you to create, update, Delete and Track your tasks.
+          </p>
+        </div>
 
+        <div class="box">
+          <h3>contact info</h3>
+          <p><i class="fas fa-envelope"></i>jnvkirankp25522@gmail.com</p>
+          <p>
+            <i class="fas fa-map-marked-alt"></i>Uttar Pradesh, India-201301
+          </p>
+          <div class="share">
+            <a
+              href="https://www.linkedin.com/in/Kirankp25"
+              class="fab fa-linkedin"
+              target="_blank"
+            ></a>
+            <a
+              href="https://github.com/Yadvendra016/TODO.git"
+              class="fab fa-github"
+              target="_blank"
+            ></a>
+            <a href="" class="fab fa-twitter" target="_blank"></a>
+          </div>
+        </div>
+      </div>
 
-                    <section class="footer">
-
-                      <div class="box-container">
-                  
-                        <div class="box">
-                          <h3>About</h3>
-                          <p>
-                            Thank you for visiting. Connect with me over socials. <br />
-                            <br />
-                            TODO App enables you to create, update, Delete and Track your tasks.
-                          </p>
-                        </div>
-                  
-                          
-                  
-                          <div class="box">
-                              <h3>contact info</h3>
-                              <p> <i class="fas fa-envelope"></i>jnvkirankp25522@gmail.com</p>
-                              <p> <i class="fas fa-map-marked-alt"></i>Uttar Pradesh, India-201301</p>
-                              <div class="share">
-                  
-                                  <a href="https://www.linkedin.com/in/Kirankp25" class="fab fa-linkedin" target="_blank"></a>
-                                  <a href="https://github.com/Yadvendra016/TODO.git" class="fab fa-github" target="_blank"></a>
-                                  <a href="" class="fab fa-twitter" target="_blank"></a>
-                              </div>
-                          </div>
-                      </div>
-                  
-                      <h1 class="credit">All copyright <i class="fa fa-copyright" aria-hidden="true"></i>reserved to <a
-                              href="https://github.com/Yadvendra016/TODO.git"> Kiran patil</a></h1>
-                  
-                  </section>
+      <h1 class="credit">
+        All copyright <i class="fa fa-copyright" aria-hidden="true"></i>reserved
+        to <a href="https://github.com/Yadvendra016/TODO.git"> Kiran patil</a>
+      </h1>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
