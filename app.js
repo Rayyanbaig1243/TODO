@@ -35,12 +35,12 @@ function addTodo(e) {
     return;
   }
   // make the default text invisible
-  if (todoInput.value.trim() != '' || getItemFromLocalStorage().length > 0) {
-    document.getElementById('default').style.display = 'none';
+  if (todoInput.value.trim() != "") {
+    document.getElementById("default").style.display = "none";
   }
   // alert("Duplicate task")
   if (isDuplicate(todoInput.value)) {
-    openmodal('red', 'This Task is already added!');
+    openmodal("red", "This Task is already added!");
     return;
   }
 
@@ -63,8 +63,8 @@ function addTodo(e) {
   //Save to local
   saveLocalTodos(newTodoItem);
   //
-  newTodo.classList.add('todo-item');
-  newTodo.classList.add('todo');
+  newTodo.classList.add("todo-item");
+  newTodo.classList.add("todo");
   todoDiv.appendChild(newTodo);
   todoInput.value = '';
   const edit = document.createElement('div');
@@ -423,7 +423,7 @@ function deleteAll() {
   localStorage.removeItem('todos');
   document.getElementById('confirmation_box').classList.add('hide');
   //make defalut text visisble
-  document.getElementById('default').style.display = 'block';
+  document.getElementById("default").style.display = "block";
 }
 
 function openmodal(color, message) {
@@ -442,11 +442,11 @@ var date = today.toString();
 // document.getElementById('d1').innerHTML = date;
 
 function show_alert() {
-  if (localStorage.getItem('todos') === null) {
-    let html = 'Please add items first';
+  if (localStorage.getItem("todos") === null) {
+    let html = "Please add items first";
     console.log(html);
   } else {
-    document.getElementById('confirmation_box').classList.remove('hide');
+    document.getElementById("confirmation_box").classList.remove("hide");
   }
 }
 function goback() {

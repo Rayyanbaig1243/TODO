@@ -1,78 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 
-<head>
-  <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-  <title>MyTODO</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <title>MyTODO</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="theme.css">
-</head>
+  <body>
+    <header>
+      <div class="main_heading">
+        <h2>MyTODO</h2>
+      </div>
+    </header>
 
-<body>
-  <header>
-    <div class="main_heading">
-      <h2><u style="text-decoration:none;">My TODO</u></h2>
-    </div>
-    <div class="container">
-      <button id="switch" onclick="toggleTheme()">Switch</button>
-    </div>
-
-  </header>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">...</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+    <div class="blue" id="Modal">
+      <div class="content" id="content">
+        <span id="modal-text"> </span>
+        <!-- <button onclick="closemodal()" class="modal-btn">x</button> -->
       </div>
     </div>
-  </div>
-
-  <form class="todoform">
-
+    <!-- <span class="todayDate">Day <span id="d1"></span></span> -->
     <form class="todoform">
-      <input type="text" class="form-control form-control-lg todo-input" placeholder="Add a new task ..." required />
-      <div>
-        <button class="btn btn-primary todo-button" type="submit" title="Add new task">ADD</button>
+      <input
+        type="text"
+        placeholder="Add a new Task .."
+        class="todo-input"
+        required
+      />
+      <div class="abc">
+        <button class="todo-button" type="submit">
+          <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+          <select
+            name="todos"
+            class="filter-todo"
+            style="color: rgb(35, 32, 32)"
+          >
+            <option value="all" style="color: rgb(31, 27, 27)">All</option>
+            <option value="completed" style="color: rgb(43, 39, 39)">
+              Completed
+            </option>
+            <option value="incomplete" style="color: rgb(20, 18, 18)">
+              Incomplete
+            </option>
+          </select>
+        </div>
+
+        <div class="content" id="content">
+          <span id="modal-text"> </span>
+          <!-- <button onclick="closemodal()" class="modal-btn">x</button> -->
+        </div>
       </div>
     </form>
-    <div class="hr-wrapper">
-      <hr />
-    </div>
-    <div class="select-wrapper">
-      <p class="mb-0 me-2 text-muted filter-txt">Filter</p>
-      <div class="select">
-        <select name="todos" class="select filter-todo">
-          <option value="all">All</option>
-          <option value="completed">Completed</option>
-          <option value="incomplete">Incomplete</option>
-        </select>
-      </div>
-    </div>
-    <div>
-      <h2 id="default">You don't have any task to do.</h2>
-    </div>
+    <!-- <span class="todayDate">Day <span id="d1"></span></span> -->
+
+    <div><h2 id="default">You don't have any task to do.</h2></div>
     <div class="todo-container">
       <ul class="todo-list"></ul>
     </div>
@@ -89,33 +109,42 @@
       </div>
     </div>
 
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>About</h3>
+          <p>
+            Thank you for visiting. Connect with me over socials. <br />
+            <br />
+            TODO App enables you to create, update, Delete and Track your tasks.
+          </p>
+        </div>
 
-    <footer class="footer">
-      <div class="social-media">
+        <div class="box">
+          <h3>contact info</h3>
+          <p><i class="fas fa-envelope"></i>jnvkirankp25522@gmail.com</p>
 
-        <section class="footer">
-
-
-          <div class="box-container">
-
-            <div class="box">
-              <h3>About </h3>
-              <p>Thank you for visiting. Connect with me over socials. <br /> <br />
-                TODO App enables you to create, update, Delete and Track your tasks
-              </p>
-            </div>
-            <div class="box">
-              <h3>contact info</h3>
-              <p> <i class="fas fa-envelope"></i>jnvkirankp25522@gmail.com</p>
-              <div class="share">
-                <a href="/" class="fab fa-linkedin" target="_blank"></a>
-                <a href="https://github.com/Kirankp25" class="fab fa-github" target="_blank"></a>
-                <a href="/" class="fab fa-twitter" target="_blank"></a>
-              </div>
-            </div>
+          <div class="share">
+            <a
+              href="https://www.linkedin.com/in/Kirankp25"
+              class="fab fa-linkedin"
+              target="_blank"
+            ></a>
+            <a
+              href="https://github.com/Yadvendra016/TODO.git"
+              class="fab fa-github"
+              target="_blank"
+            ></a>
+            <a href="" class="fab fa-twitter" target="_blank"></a>
           </div>
+        </div>
       </div>
-    </footer>
+
+      <h1 class="credit">
+        All copyright <i class="fa fa-copyright" aria-hidden="true"></i>reserved
+        to <a href="https://github.com/Yadvendra016/TODO.git"> Kiran patil</a>
+      </h1>
+    </section>
     <script src="app.js"></script>
 </body>
 
