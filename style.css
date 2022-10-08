@@ -61,6 +61,8 @@ body {
 }
 
 header {
+  height: 30px;
+  width: 100%;
   letter-spacing: 5px;
   background: #1f2423;
   color: rgb(197, 190, 190);
@@ -619,4 +621,28 @@ select {
     flex-direction: row;
     justify-content: center;
   }
+}
+
+.dark{
+  background-color: #000;
+  color: rgb(208, 182, 182);
+  background: #000;
+}
+
+#toggleDark{
+  position: relative;
+}
+
+#toggle{
+  display: flex;
+  color: #000;
+  height: 30px;
+  width: 40px;
+  justify-self: end;
+  position: absolute;
+  right : 5rem;
+}
+#toggle >button{
+  border-radius: 10px;
+  background-color: #9ca29d;
 }
