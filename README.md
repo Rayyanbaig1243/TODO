@@ -4,7 +4,15 @@ This is MyTODO
 # UI OF MyTODO
 ![Screenshot (227)](https://user-images.githubusercontent.com/86179143/195296388-91de3e84-9903-49d3-a8aa-ad0be21da259.png)
 
+## Features
 
+Please see out our rules for contributing to our project
+
+* Keep track of TODOs
+* Add TODOs
+* Delete TODOs
+* Search TODOs
+* Cool Dynamic Ui, 
 
 # Steps for adding your name in the CONTRIBUTERS.md File
 
@@ -16,4 +24,4 @@ This is MyTODO
     eg. | Karan | https://github.com/karanS08 | 
 6. Make your pull request 🙌🏽.
 7. Don't forget to star the repo 🙂.
-## Features
+
