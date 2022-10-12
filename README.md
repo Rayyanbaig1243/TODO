@@ -25,3 +25,8 @@ Please see out our rules for contributing to our project
 6. Make your pull request 🙌🏽.
 7. Don't forget to star the repo 🙂.
 
+
+# Contributors
+<a href="https://github.com/Kirankp25/TODO/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Kirankp25/TODO" />
+</a>
