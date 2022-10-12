@@ -2,7 +2,9 @@
 This is MyTODO
 
 # UI OF MyTODO
-![Screenshot (227)](https://user-images.githubusercontent.com/87818185/188329886-e1e879ef-783e-44c9-b571-8ede4410182c.png)
+![Screenshot (227)](https://user-images.githubusercontent.com/86179143/195296388-91de3e84-9903-49d3-a8aa-ad0be21da259.png)
+
+
 
 # Steps for adding your name in the CONTRIBUTERS.md File
 
@@ -14,3 +16,4 @@ This is MyTODO
     eg. | Karan | https://github.com/karanS08 | 
 6. Make your pull request 🙌🏽.
 7. Don't forget to star the repo 🙂.
+## Features
